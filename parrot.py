@@ -4,3 +4,12 @@ print(str(message))
 
 name = input("Please enter your name: ")
 print("Hello, " + str(name) + "!")
+
+prompt = "If you tell us who you are, we can personalize the messages you see."
+prompt += "\nWhat is your first name? "
+
+name = input(prompt)
+print("\nHello, " + str(name) + "!")
+
+age = input("How old are you? ")
+print(age)
