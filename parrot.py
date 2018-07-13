@@ -13,3 +13,5 @@ print("\nHello, " + str(name) + "!")
 
 age = input("How old are you? ")
 print(age)
+print(age >= 18)
+print("His age is " + str(age) + ".")
