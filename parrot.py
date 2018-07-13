@@ -4,6 +4,3 @@ print(str(message))
 
 name = input("Please enter your name: ")
 print("Hello, " + str(name) + "!")
-
-
-
