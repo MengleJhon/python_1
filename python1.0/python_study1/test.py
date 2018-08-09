@@ -58,9 +58,35 @@
 # invest(100,.05,8)
 # invest(2000,.025,5)
 
-a = [1,2,1.0]
-a[1] = 5
-print(a)
+# 数据结构
+a = [1,2,3]
+# a[1] = 5
+# print(a)
+#
+# del a[0:1]
+# print(a)
 
-del a[0:1]
-print(a)
+b = [4,5,6,7,8]
+print(zip(a,b))
+print(list(zip(a,b)))
+print(*zip(a,b))
+print(list(zip(*zip(a,b))))
+
+
+c = [j + 1 for j in range(1,10)]
+print(c)
+d = [n for n in range(1,10) if n % 2 == 0]
+print(d)
+e = [letter.lower() for letter in 'ABCDEFGHIJKLMN']
+print(e)
+
+f = {i:i + 1 for i in range(4)}
+print(f)
+g = {i:j.upper() for i,j in zip(range(1,6),'abcde')}
+print(g)
+
+letters = ['a','b','c','d','e','f','g']
+for num,letter in enumerate(letters):
+    print(letter,'is',num + 1)
+print(list(enumerate(letters)))
+
